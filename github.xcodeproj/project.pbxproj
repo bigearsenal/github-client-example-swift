@@ -19,6 +19,8 @@
 		BC507EBF2104FBF70007E1FE /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC507EBE2104FBF70007E1FE /* Repository.swift */; };
 		BC507EC12104FDEE0007E1FE /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC507EC02104FDEE0007E1FE /* Owner.swift */; };
 		BC507EC32104FF920007E1FE /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC507EC22104FF920007E1FE /* RepositoryCell.swift */; };
+		BC507EC5210509260007E1FE /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC507EC4210509260007E1FE /* API.swift */; };
+		BC507EC921053DF60007E1FE /* RepositoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC507EC821053DF60007E1FE /* RepositoryDetailViewController.swift */; };
 		DB3C3BD4209CA119629BD14C /* Pods_githubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43036760DD11D18F185BE216 /* Pods_githubUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 		BC507EBE2104FBF70007E1FE /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		BC507EC02104FDEE0007E1FE /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		BC507EC22104FF920007E1FE /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
+		BC507EC4210509260007E1FE /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		BC507EC821053DF60007E1FE /* RepositoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailViewController.swift; sourceTree = "<group>"; };
 		EAD8DAA412A7EE4A2E06A803 /* Pods-githubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-githubTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-githubTests/Pods-githubTests.release.xcconfig"; sourceTree = "<group>"; };
 		F1E218943F4747248564BC4C /* Pods_githubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_githubTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -151,6 +155,7 @@
 				BC507E902104F7B00007E1FE /* Assets.xcassets */,
 				BC507E922104F7B00007E1FE /* LaunchScreen.storyboard */,
 				BC507E952104F7B00007E1FE /* Info.plist */,
+				BC507EC4210509260007E1FE /* API.swift */,
 			);
 			path = github;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 			children = (
 				BC507EBC2104FA6A0007E1FE /* SearchViewController.swift */,
 				BC507EC22104FF920007E1FE /* RepositoryCell.swift */,
+				BC507EC821053DF60007E1FE /* RepositoryDetailViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -373,11 +379,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-github/Pods-github-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +422,8 @@
 				BC507EBD2104FA6A0007E1FE /* SearchViewController.swift in Sources */,
 				BC507EC12104FDEE0007E1FE /* Owner.swift in Sources */,
 				BC507E8A2104F7AF0007E1FE /* AppDelegate.swift in Sources */,
+				BC507EC5210509260007E1FE /* API.swift in Sources */,
+				BC507EC921053DF60007E1FE /* RepositoryDetailViewController.swift in Sources */,
 				BC507EBF2104FBF70007E1FE /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,7 @@ target 'github' do
   # Pods for github
   pod 'Alamofire', '~> 4.7'
   pod 'SDWebImage', '~> 4.0'
+  pod 'DZNEmptyDataSet'
 
   target 'githubTests' do
     inherit! :search_paths

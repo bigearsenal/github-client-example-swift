@@ -8,8 +8,15 @@
 
 import Foundation
 
-struct Owner {
+struct Owner: Decodable {
     var id: UInt32
     var login: String
     var avatarURL: String
+    var htmlLink: String
+    enum CodingKeys: String, CodingKey {
+        case id
+        case login
+        case avatarURL = "avatar_url"
+        case htmlLink = "html_url"
+    }
 }
